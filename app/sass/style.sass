@@ -1,0 +1,107 @@
+@import url('../fonts/fonts/stylesheet.css')
+  
+$color-item: #F6BE2C
+$color-white: #EFEFEF
+$color-black: #0c0c0c
+
+h1, h2, h3, h4, h5, h6, p, a, span 
+  color: $color-white
+
+h1,h2,h3
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif
+  font-weight: bold
+  text-transform: uppercase
+h1
+  font-size: 64px
+h2
+  font-size: 32px
+h3 
+  font-size: 24px
+h4 
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif
+  font-weight: 600
+  font-size: 18px
+h5 
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif
+  font-weight: 400
+  font-size: 14px
+h6 
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif
+  font-weight: 700
+  font-size: 10px
+p 
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif
+  font-size: 14px
+a 
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif
+  font-weight: 700
+  color: $color-white
+  text-decoration: none
+body 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  background-color: $color-black
+
+.navbar 
+  display: flex
+  flex-direction: row
+  height: 40px
+  ul 
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      font-size: 12px
+      a
+        font-family: "Montserrat", "Helvetica", "Arial", sans-serif
+        font-weight: 200
+        padding: 7px 0px
+        &:hover
+          color: $color-white
+          border-bottom: 1px solid $color-item
+
+.header
+  background-image: url(../img/background-min.png)
+  background-size: cover
+  background-position-y: 99%
+  height: 900px
+  &-logo 
+    display: flex
+    flex-direction: row
+    align-items: center
+    img 
+      height: 80px
+      width: 80px
+    ul 
+      margin: 0 0 0 20px
+      padding: 0
+      li 
+        list-style: none
+        color: $color-white
+  &-link 
+    height: 60px
+    text-align: center
+    a 
+      img 
+        width: 32px
+        height: 32px
+  &-phone 
+    height: 60px
+    text-align: right
+    a 
+      font-size: 20px
+      color: $color-item
+      &:hover
+        color: $color-white
+  &-title
+    margin-top: 200px
+    h1 
+      span 
+        color: $color-item
+    h3 
+      margin-top: 20px
